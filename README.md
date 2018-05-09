@@ -8,6 +8,7 @@ This fork of [the cypress tyny repo](https://github.com/cypress-io/cypress-test-
 
 ## Original repo modifications
 the specs within `cypress/integration` has been changed: a failing `spec.demo.js` has been added.
+
 The `package.json` file got a different `cypress:run` command and the `cypress` dependency listed as a dev dependency.
 
 ## Installation and setup
