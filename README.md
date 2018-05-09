@@ -21,7 +21,7 @@ The command has been changed so now stands as following:
 "cypress:run": "cypress run --config ignoreTestFiles=*.demo.js"
 ```
 
-As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being run -thus making the suite failing-.
+As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being run -thus making the suite fail-.
 
 
 Is worth to mention that setting up:
