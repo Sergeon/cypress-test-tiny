@@ -2,7 +2,7 @@
 
 This fork of [the cypress tyny repo](https://github.com/cypress-io/cypress-test-tiny) highlights an issue when passing the `ignoreTestFiles` option to cypress as a cli parameter.
 
-## Context
+## Context
 * OS: MacOs 10.13.4
 * Cypress version: 2.1
 
