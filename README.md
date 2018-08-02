@@ -11,16 +11,31 @@ the specs within `cypress/integration` has been changed: a failing `spec.demo.js
 The `package.json` file got a different `cypress:run` command and the `cypress` dependency listed as a dev dependency.
 
 ## installation and setup
-Run `npm install`.
+Run:
 
-Then launch `npm run cypress:run` to run the test suite.
+`$ npm install`
+
+Then:
+
+`$ npm run cypress:run`
+
+to run the test suite.
 
 The command has been changed so now stands as following:
 ```
 "cypress:run": "cypress run --config ignoreTestFiles=*.demo.js"
 ```
 
-As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being run -thus making the suite failing-.
+Also, `package.json` provides other commands with syntax variations, [which where suggested here](https://github.com/cypress-io/cypress/issues/1696#issuecomment-387834710):
+
+```
+"cypress:run-glob": "cypress run --config ignoreTestFiles='**/*.demo.js'",
+"cypress:run-glob2": "cypress run --config ignoreTestFiles='*.demo.js'"
+```
+
+Those commands still run the `.demo` test :sweat:
+
+As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being ran -thus making the suite failing-.
 
 
 Is worth to mention that setting up:

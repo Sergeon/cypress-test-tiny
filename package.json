@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Issue with cypress cli and the ignoreTestFiles option",
   "scripts": {
-    "cypress:run": "cypress run --config ignoreTestFiles=*.demo.js"
+    "cypress:run": "cypress run --config ignoreTestFiles=*.demo.js",
+    "cypress:run-glob": "cypress run --config ignoreTestFiles='**/*.demo.js'",
+    "cypress:run-glob2": "cypress run --config ignoreTestFiles='*.demo.js'"
     
   },
   "keywords": [],
