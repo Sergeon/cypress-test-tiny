@@ -1,13 +1,14 @@
-# issue passing `ignoreTestFiles` to `cypress run` as cli option
+# Issue passing `ignoreTestFiles` to `cypress run` as cli option
 
 This fork of [the cypress tyny repo](https://github.com/cypress-io/cypress-test-tiny) highlights an issue when passing the `ignoreTestFiles` option to cypress as a cli parameter.
 
-## Context
+## Context
 * OS: MacOs 10.13.4
 * Cypress version: 2.1
 
 ## Original repo modifications
 the specs within `cypress/integration` has been changed: a failing `spec.demo.js` has been added.
+
 The `package.json` file got a different `cypress:run` command and the `cypress` dependency listed as a dev dependency.
 
 ## installation and setup
@@ -35,7 +36,7 @@ Also, `package.json` provides other commands with syntax variations, [which wher
 
 Those commands still run the `.demo` test :sweat:
 
-As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being ran -thus making the suite failing-.
+As far as I know, this should ignore the `cypress/integration/spec.demo.js` test. However, it is being ran -thus making the suite fail-.
 
 
 Is worth to mention that setting up:
